@@ -1,0 +1,169 @@
+/* universal section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  font-size: 62.5%;
+}
+/* common styling */
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s ease all;
+}
+li {
+  list-style: none;
+}
+/* nav bar section */
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 0rem 5rem;
+}
+.logo-menu {
+  display: flex;
+  gap: 3rem;
+}
+.logo {
+  border-right: 2px solid rgb(235, 230, 230);
+  padding-right: 3rem;
+  align-self: center;
+}
+.logo-menu > .logo > img {
+  height: 4rem;
+}
+.logo-menu > .menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+.nav-bar > .btn {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  justify-self: end;
+  visibility: visible;
+}
+.btn a {
+  background-color: rgb(95, 7, 177);
+  width: 10rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+.bar {
+  display: none;
+}
+
+/* main-section */
+.hero-section {
+  background: url("./assests/bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  gap: 3rem;
+}
+.hero-section h1 {
+  font-size: 6rem;
+}
+.hero-section span {
+  font-size: 2.1rem;
+}
+.hero-section a {
+  font-size: 1.8rem;
+  background-color: rgb(95, 7, 177);
+  width: 25rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+}
+a:hover {
+  color: rgb(95, 7, 177);
+  background-color: white;
+  border: 1px solid rgb(95, 7, 177);
+  box-shadow: 0 0 10px 3px rgb(95, 7, 177);
+}
+.menu a {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+@media (max-width: 1050px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+  .menu {
+    background-color: rgb(95, 7, 177);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem !important;
+    gap: 5rem !important;
+    transition: 0.5s ease all;
+  }
+  .btn a {
+    z-index: 100;
+    background-color: white;
+    color: rgb(95, 7, 177);
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+  }
+  #tokenBtn {
+    display: none;
+  }
+  .bar {
+    display: block;
+    font-size: 5rem;
+    z-index: 999;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    border: transparent;
+  }
+}
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 42%;
+  }
+}
